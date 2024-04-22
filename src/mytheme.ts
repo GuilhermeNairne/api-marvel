@@ -1,8 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
+import Bangers from '../src/fonts/Bangers.ttf'
 
 const myTheme = extendTheme({
   fonts: {
-    heading: "Rajdhani, sans-serif",
+    heading: "Bangers",
     body: "Rajdhani, sans-serif",
     inriaSerif: "Iria Serif, serif",
   },
