@@ -26,9 +26,7 @@ export function Home() {
     'Civil War (2006) #3',
     'Civil War (2006) #1'
     ]
-  }
-
-  
+  }  
 
   return (
     <Flex flexDir={"column"} flex={1}>
