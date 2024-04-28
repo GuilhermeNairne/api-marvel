@@ -1,6 +1,7 @@
 import api from "../api";
 
 export interface ComicInterface {
+  _id: string
     title: string;
     variantDescription: string
     description: string;
@@ -13,8 +14,8 @@ export interface ComicInterface {
   }
 
 export function useComics() {
-    async function getComicByTitle(title: string) {
-        const { data } = await api.get<ComicInterface>("comics/title", { params: { title: title } });
+    async function getComics() {
+        const { data } = await api.get<ComicInterface[]>("comics/");
     
         return data;
     }
@@ -27,5 +28,5 @@ export function useComics() {
         return data;
     }
 
-    return {getComicsByTitle}
+    return {getComicsByTitle, getComics}
 }
